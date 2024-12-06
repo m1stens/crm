@@ -53,7 +53,7 @@
 		echo "Вы не ввели имя пользователя";
 	else if(strlen(trim($name)) <= 1)
 		echo "Такого имени не существует";
-	else if(trim($age) == "" || trim($phone) == "" || trim($email) == "")
+	else if(trim($phone) == "" || trim($email) == "")
 		echo "Введите все данные";
 	else{
 	$sql = "INSERT INTO `TClient` (`fFIO`, `fPhone_number`, `fEmail`) VALUES ('$name', '$phone', '$email')";
