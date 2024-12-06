@@ -56,7 +56,7 @@
 	else if(trim($age) == "" || trim($phone) == "" || trim($email) == "")
 		echo "Введите все данные";
 	else{
-	$sql = "INSERT INTO `TClient` (`fFIO`, `fAge`, `fPhone_number`, `fEmail`) VALUES ('$name', '$age', '$phone', '$email')";
+	$sql = "INSERT INTO `TClient` (`fFIO`, `fPhone_number`, `fEmail`) VALUES ('$name', '$phone', '$email')";
 	$result = mysqli_query($conn,$sql);
 	$id_insert = mysqli_insert_id($conn);
 
